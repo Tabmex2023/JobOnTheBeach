@@ -4,24 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>JobOnTheBeach – Bürojob im Ausland</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Inter', sans-serif;
       background-color: #DFFBF9;
-      color: #003740;
+      color: #002B45;
     }
 
     header {
       position: fixed;
       top: 0;
       width: 100%;
-      background-color: white;
+      background-color: #FFF4B1;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 10px 20px;
+      padding: 15px 20px;
       z-index: 1000;
       flex-wrap: wrap;
     }
@@ -34,22 +35,14 @@
 
     .logo-container img {
       height: 80px;
-      margin-right: 10px;
+      margin-right: 15px;
     }
 
     .slogan {
       font-style: italic;
-      font-weight: bold;
-      color: #008B8B;
-      transform: rotate(-6deg);
-      animation: float 3s ease-in-out infinite;
-      white-space: nowrap;
-      font-size: 16px;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: rotate(-6deg) translateY(0); }
-      50% { transform: rotate(-6deg) translateY(-4px); }
+      font-weight: 600;
+      font-size: 20px;
+      color: #002B45;
     }
 
     nav {
@@ -60,8 +53,8 @@
     nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: #0077A3;
-      font-weight: bold;
+      color: #002B45;
+      font-weight: 600;
     }
 
     .burger {
@@ -73,16 +66,16 @@
     .burger div {
       width: 25px;
       height: 3px;
-      background-color: #0077A3;
+      background-color: #002B45;
       margin: 4px;
     }
 
     .mobile-nav {
       display: none;
       flex-direction: column;
-      background: white;
+      background: #FFF4B1;
       position: absolute;
-      top: 70px;
+      top: 80px;
       right: 20px;
       border: 1px solid #ccc;
       padding: 10px;
@@ -90,8 +83,9 @@
 
     .mobile-nav a {
       padding: 10px;
-      color: #0077A3;
+      color: #002B45;
       text-decoration: none;
+      font-weight: 600;
     }
 
     .container {
@@ -100,15 +94,8 @@
       padding: 0 20px;
     }
 
-    h1 {
-      color: #003740;
-    }
-
-    .highlight {
-      background-color: #00D2B3;
-      color: white;
-      padding: 4px 8px;
-      border-radius: 5px;
+    h1, h2 {
+      color: #002B45;
     }
 
     ul {
@@ -124,7 +111,7 @@
       border-radius: 5px;
       text-decoration: none;
       font-size: 16px;
-      font-weight: bold;
+      font-weight: 600;
       margin-top: 20px;
     }
 
@@ -132,7 +119,7 @@
       text-align: center;
       padding: 30px 10px;
       font-size: 14px;
-      color: #333;
+      color: #002B45;
     }
 
     @media (max-width: 768px) {
@@ -144,14 +131,14 @@
         display: flex;
       }
 
-      .slogan {
-        font-size: 14px;
-        margin-top: 5px;
-      }
-
       .logo-container {
         flex-direction: column;
         align-items: flex-start;
+      }
+
+      .slogan {
+        margin-top: 8px;
+        font-size: 18px;
       }
     }
   </style>
@@ -181,26 +168,24 @@
   </header>
 
   <div class="container">
-    <h1>Dein Bürojob unter Palmen 🌴</h1>
-    <p>Du willst mehr vom Leben als graue Büros und nasses Wetter? <span class="highlight">JobOnTheBeach</span> bringt dich an traumhafte Orte mit echtem Perspektivwechsel!</p>
+    <h1>Dein Bürojob am Meer</h1>
+    <p>Mit <strong>JobOnTheBeach</strong> bieten wir jungen Talenten die Chance, beruflich durchzustarten – und das in traumhafter Umgebung. Schluss mit Stress, Kälte und grauem Alltag. Bei uns arbeitest du dort, wo andere Urlaub machen.</p>
 
-    <h2>🔹 Was dich erwartet:</h2>
+    <h2>Das erwartet dich:</h2>
     <ul>
-      <li>💼 35-Stunden-Woche mit echtem Feierabendgefühl</li>
-      <li>💸 2.000 € netto + 13. Gehalt</li>
-      <li>🛏️ Firmenwohnung mit 1 Schlafzimmer, Balkon & Meerblick</li>
-      <li>🏥 Private Krankenversicherung</li>
-      <li>🏋️ Gym, Wellness & Infinity-Pool inklusive</li>
-      <li>🧑‍🤝‍🧑 Einführung, Sprachkurs & persönlicher Ansprechpartner</li>
-      <li>✈️ Flugkosten werden übernommen</li>
+      <li>35-Stunden-Woche mit freiem Wochenende</li>
+      <li>Netto-Gehalt: 2.000 € + 13. Monatsgehalt</li>
+      <li>Private Krankenversicherung</li>
+      <li>Modern ausgestattete Firmenwohnung (ca. 55 m²)</li>
+      <li>Fitnessstudio, Wellness & Infinity Pool inklusive</li>
+      <li>Sprachkurs & persönliche Begleitung vor Ort</li>
+      <li>Flugkosten werden übernommen</li>
     </ul>
 
-    <h2>📅 Und so läuft's:</h2>
-    <p>1. Du bewirbst dich über WhatsApp – easy und direkt<br>
-       2. Wir sprechen miteinander (kein steifes Vorstellungsgespräch)<br>
-       3. Wenn alles passt: Vertrag, Startdatum, Koffer packen!</p>
+    <h2>So einfach geht's:</h2>
+    <p>Du schreibst uns bei WhatsApp, wir führen ein kurzes Kennenlerngespräch – ganz ohne Bewerbungsstress. Wenn alles passt, bekommst du deinen Vertrag und kannst starten.</p>
 
-    <a class="whatsapp-button" href="https://wa.me/5210000000000?text=Hi!%20Ich%20interessiere%20mich%20für%20JobOnTheBeach%20🌴" target="_blank">
+    <a class="whatsapp-button" href="https://wa.me/5210000000000?text=Hallo,%20ich%20interessiere%20mich%20für%20JobOnTheBeach" target="_blank">
       Jetzt per WhatsApp bewerben
     </a>
   </div>
