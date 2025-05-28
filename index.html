@@ -8,25 +8,53 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #9EDCFB; /* ersetze ggf. durch exakten Farbcode */
-      color: #000;
+      background-color: #DFFBF9;
+      color: #003740;
     }
 
     header {
-      background-color: white;
       position: fixed;
       top: 0;
       width: 100%;
-      z-index: 1000;
+      background-color: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 10px 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      z-index: 1000;
+      flex-wrap: wrap;
     }
 
-    header img {
-      height: 50px;
+    .logo-container {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo-container img {
+      height: 80px;
+      margin-right: 10px;
+    }
+
+    .slogan {
+      font-style: italic;
+      font-weight: bold;
+      color: #008B8B;
+      transform: rotate(-6deg);
+      animation: float 3s ease-in-out infinite;
+      white-space: nowrap;
+      font-size: 16px;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: rotate(-6deg) translateY(0); }
+      50% { transform: rotate(-6deg) translateY(-4px); }
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
     }
 
     nav a {
@@ -36,14 +64,56 @@
       font-weight: bold;
     }
 
+    .burger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .burger div {
+      width: 25px;
+      height: 3px;
+      background-color: #0077A3;
+      margin: 4px;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background: white;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .mobile-nav a {
+      padding: 10px;
+      color: #0077A3;
+      text-decoration: none;
+    }
+
     .container {
       max-width: 900px;
-      margin: 120px auto 60px;
+      margin: 140px auto 60px;
       padding: 0 20px;
     }
 
     h1 {
-      color: #004B6B;
+      color: #003740;
+    }
+
+    .highlight {
+      background-color: #00D2B3;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.8em;
     }
 
     .whatsapp-button {
@@ -55,6 +125,7 @@
       text-decoration: none;
       font-size: 16px;
       font-weight: bold;
+      margin-top: 20px;
     }
 
     footer {
@@ -63,40 +134,87 @@
       font-size: 14px;
       color: #333;
     }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+
+      .burger {
+        display: flex;
+      }
+
+      .slogan {
+        font-size: 14px;
+        margin-top: 5px;
+      }
+
+      .logo-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="https://i.postimg.cc/YC2dmQw8/1-D15-F631-6465-49-D2-94-AA-1-C08-A58-F3976.png" alt="JobOnTheBeach Logo">
-    <nav>
+    <div class="logo-container">
+      <img src="https://i.postimg.cc/YC2dmQw8/1-D15-F631-6465-49-D2-94-AA-1-C08-A58-F3976.png" alt="JobOnTheBeach Logo">
+      <div class="slogan">Karriere im Paradies – stressfrei & sicher.</div>
+    </div>
+    <div class="burger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav id="main-nav">
       <a href="index.html">Startseite</a>
       <a href="#standorte">Standorte</a>
       <a href="#ueberuns">Über uns</a>
     </nav>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">Startseite</a>
+      <a href="#standorte">Standorte</a>
+      <a href="#ueberuns">Über uns</a>
+    </div>
   </header>
 
   <div class="container">
-    <h1>Starte dein neues Leben mit JobOnTheBeach</h1>
-    <p>Wir suchen für unsere Technologiekunden engagierte Mitarbeiter:innen, die bereit sind, den Schritt ins Ausland zu wagen. Dich erwartet ein sicherer Bürojob bei 35 Stunden pro Woche – mit attraktiven Zusatzleistungen:</p>
-    <ul>
-      <li>Nettoeinkommen: 2000 € + 13. Monatsgehalt</li>
-      <li>Private Krankenversicherung vor Ort</li>
-      <li>Fitnessstudio mit Wellnessbereich & Infinity-Pool</li>
-      <li>Unterstützung bei der Wohnungssuche</li>
-      <li>Firmeneigene Apartments (50–60 m², 1 SZ, Bad, Wohn-/Essbereich, Balkon)</li>
-      <li>Einführungstage, Sprachkurs, Buddy-Programm</li>
-      <li>Übernahme der Flugkosten</li>
-    </ul>
-    <h2>Ablauf:</h2>
-    <p>Du wählst deinen Wunschstandort – <strong>Mexiko, Costa Rica oder Panama</strong>. Nach einem kurzen Erstgespräch erhältst du bei positiver Rückmeldung deinen Arbeitsvertrag inkl. Startdatum.</p>
+    <h1>Dein Bürojob unter Palmen 🌴</h1>
+    <p>Du willst mehr vom Leben als graue Büros und nasses Wetter? <span class="highlight">JobOnTheBeach</span> bringt dich an traumhafte Orte mit echtem Perspektivwechsel!</p>
 
-    <a class="whatsapp-button" href="https://wa.me/5210000000000?text=Ich%20interessiere%20mich%20für%20einen%20Job%20bei%20JobOnTheBeach!" target="_blank">Jetzt per WhatsApp bewerben</a>
+    <h2>🔹 Was dich erwartet:</h2>
+    <ul>
+      <li>💼 35-Stunden-Woche mit echtem Feierabendgefühl</li>
+      <li>💸 2.000 € netto + 13. Gehalt</li>
+      <li>🛏️ Firmenwohnung mit 1 Schlafzimmer, Balkon & Meerblick</li>
+      <li>🏥 Private Krankenversicherung</li>
+      <li>🏋️ Gym, Wellness & Infinity-Pool inklusive</li>
+      <li>🧑‍🤝‍🧑 Einführung, Sprachkurs & persönlicher Ansprechpartner</li>
+      <li>✈️ Flugkosten werden übernommen</li>
+    </ul>
+
+    <h2>📅 Und so läuft's:</h2>
+    <p>1. Du bewirbst dich über WhatsApp – easy und direkt<br>
+       2. Wir sprechen miteinander (kein steifes Vorstellungsgespräch)<br>
+       3. Wenn alles passt: Vertrag, Startdatum, Koffer packen!</p>
+
+    <a class="whatsapp-button" href="https://wa.me/5210000000000?text=Hi!%20Ich%20interessiere%20mich%20für%20JobOnTheBeach%20🌴" target="_blank">
+      Jetzt per WhatsApp bewerben
+    </a>
   </div>
 
   <footer>
-    © 2025 JobOnTheBeach – Arbeiten, wo andere Urlaub machen
+    © 2025 JobOnTheBeach – Arbeiten, wo andere Urlaub machen.
   </footer>
+
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById("mobileNav");
+      nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
 
 </body>
 </html>
