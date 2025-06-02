@@ -1,1 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JobOnTheBeach – Über uns</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #DFFBF9;
+      color: #002B45;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #DFFBF9;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo-container img {
+      height: 100px;
+      margin-right: 20px;
+    }
+    .slogan {
+      font-style: italic;
+      font-weight: 600;
+      font-size: 22px;
+      color: #002B45;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #002B45;
+      font-weight: 600;
+    }
+    .burger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .burger div {
+      width: 25px;
+      height: 3px;
+      background-color: #002B45;
+      margin: 4px;
+    }
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background: #DFFBF9;
+      position: absolute;
+      top: 90px;
+      right: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    .mobile-nav a {
+      padding: 10px;
+      color: #002B45;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .container {
+      max-width: 900px;
+      margin: 160px auto 60px;
+      padding: 0 20px;
+    }
+    h1, h2 {
+      color: #002B45;
+    }
+    p {
+      font-size: 1.05em;
+      line-height: 1.8em;
+      margin-bottom: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 14px;
+      color: #002B45;
+    }
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+      .burger {
+        display: flex;
+      }
+      .logo-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .slogan {
+        margin-top: 8px;
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
 
+<header>
+  <div class="logo-container">
+    <img src="https://i.postimg.cc/YC2dmQw8/1-D15-F631-6465-49-D2-94-AA-1-C08-A58-F3976.png" alt="JobOnTheBeach Logo">
+    <div class="slogan">Karriere im Paradies – stressfrei & sicher.</div>
+  </div>
+  <div class="burger" onclick="toggleMenu()">
+    <div></div><div></div><div></div>
+  </div>
+  <nav id="main-nav">
+    <a href="index.html">Startseite</a>
+    <a href="standorte.html">Standorte</a>
+    <a href="ueberuns.html">Über uns</a>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Startseite</a>
+    <a href="standorte.html">Standorte</a>
+    <a href="ueberuns.html">Über uns</a>
+  </div>
+</header>
+
+<div class="container">
+  <h1>Über uns</h1>
+
+  <p><strong>JobOnTheBeach</strong> entstand inmitten einer globalen Krise, die auch eine einmalige Chance bot: Die Corona-Pandemie hat die Arbeitswelt für immer verändert. Während viele Unternehmen auf Remote Work umstellen mussten, haben wir die Herausforderung angenommen – und daraus eine Vision entwickelt.</p>
+
+  <p>Unser Ziel war von Anfang an klar: Menschen weltweit die Möglichkeit zu bieten, in traumhaften Umgebungen zu arbeiten, mit fairen Konditionen, echter Wertschätzung und sicherem Rahmen. Aus dieser Idee wurde eine internationale Bewegung – mit echten Jobs, echten Chancen und echten Perspektiven.</p>
+
+  <p>Heute kooperieren wir mit führenden internationalen Unternehmen – darunter <strong>Google, TikTok, Meta (Instagram & Facebook), Shopify, Netflix, Booking.com</strong> und vielen mehr. Unsere Partner vertrauen uns, weil wir engagierte, sprachlich starke und serviceorientierte Talente bereitstellen – flexibel, motiviert und digital versiert.</p>
+
+  <p>Unser Team besteht aus HR-Expert:innen, Tech-Spezialist:innen, Projektkoordinator:innen und Begleiter:innen vor Ort. Gemeinsam sorgen wir dafür, dass jeder Bewerber professionell aufgenommen und in das Leben vor Ort eingeführt wird. Wir begleiten dich nicht nur bis zum Vertragsabschluss – sondern sind langfristig an deiner Seite.</p>
+
+  <h2>Unsere Mission</h2>
+  <p>Wir glauben an eine Zukunft, in der Lebensqualität und Arbeit kein Widerspruch mehr sind. Unsere Mission ist es, Menschen berufliche Sicherheit zu geben – gepaart mit dem Lebensgefühl eines dauerhaften Urlaubs.</p>
+  <p>Dabei achten wir auf faire Bezahlung, soziale Absicherung, hochwertige Unterkünfte und einen respektvollen Umgang mit unseren Mitarbeitern. Für uns ist jede Person mehr als nur eine Nummer im System.</p>
+
+  <h2>Was uns besonders macht</h2>
+  <p>Anders als viele Vermittler sind wir keine anonyme Plattform. Wir sind nah dran – persönlich, digital, menschlich. Unsere Apartments sind geprüft, unsere Büros modern ausgestattet, unsere Events sorgen für echten Zusammenhalt.</p>
+  <p>Unsere Standorte (Mexiko, Costa Rica, Panama) wurden nicht zufällig gewählt. Sie bieten neben paradiesischen Kulissen auch eine hervorragende Infrastruktur, stabile politische Verhältnisse und ein internationales Netzwerk.</p>
+
+  <h2>Wachstum & Zukunft</h2>
+  <p>Seit unserer Gründung 2020 sind wir kontinuierlich gewachsen. Was mit einem kleinen Team begann, ist heute ein starkes Unternehmen mit über 50 Mitarbeitenden in der Administration und mehreren Hundert platzierten Fachkräften.</p>
+  <p>In Zukunft möchten wir neue Standorte erschließen – z. B. auf den Kanaren, in Südamerika oder Südostasien. Gleichzeitig entwickeln wir neue digitale Schulungssysteme, damit auch Quereinsteiger:innen optimale Chancen erhalten.</p>
+
+  <h2>Für Unternehmen</h2>
+  <p>Auch Unternehmen profitieren: Wir bieten deutschsprachigen Support, skalierbare Teams, feste Ansprechpartner und transparente Kosten. Durch unser erprobtes Onboarding sparen unsere Partner Zeit und erhalten zuverlässig top ausgebildete Kräfte.</p>
+
+  <h2>Für dich</h2>
+  <p>Wenn du Lust hast, mit uns durchzustarten, freuen wir uns auf deine Bewerbung. Ganz ohne Lebenslauf, ganz ohne Druck. Du bringst Motivation und Zuverlässigkeit – wir kümmern uns um den Rest.</p>
+</div>
+
+<footer>
+  © 2025 JobOnTheBeach – Gemeinsam wachsen. Weltweit.
+</footer>
+
+<script>
+  function toggleMenu() {
+    var nav = document.getElementById("mobileNav");
+    nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+  }
+</script>
+
+</body>
+</html>
