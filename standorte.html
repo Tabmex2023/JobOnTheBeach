@@ -12,7 +12,6 @@
       background-color: #DFFBF9;
       color: #002B45;
     }
-
     header {
       position: fixed;
       top: 0;
@@ -26,50 +25,42 @@
       z-index: 1000;
       flex-wrap: wrap;
     }
-
     .logo-container {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
     }
-
     .logo-container img {
       height: 100px;
       margin-right: 20px;
     }
-
     .slogan {
       font-style: italic;
       font-weight: 600;
       font-size: 22px;
       color: #002B45;
     }
-
     nav {
       display: flex;
       align-items: center;
     }
-
     nav a {
       margin: 0 15px;
       text-decoration: none;
       color: #002B45;
       font-weight: 600;
     }
-
     .burger {
       display: none;
       flex-direction: column;
       cursor: pointer;
     }
-
     .burger div {
       width: 25px;
       height: 3px;
       background-color: #002B45;
       margin: 4px;
     }
-
     .mobile-nav {
       display: none;
       flex-direction: column;
@@ -80,24 +71,17 @@
       border: 1px solid #ccc;
       padding: 10px;
     }
-
     .mobile-nav a {
       padding: 10px;
       color: #002B45;
       text-decoration: none;
       font-weight: 600;
     }
-
     .container {
       max-width: 900px;
       margin: 160px auto 60px;
       padding: 0 20px;
     }
-
-    h1, h2 {
-      color: #002B45;
-    }
-
     details {
       margin-top: 30px;
       background-color: white;
@@ -105,20 +89,17 @@
       padding: 15px;
       color: #002B45;
     }
-
     summary {
       font-size: 1.2em;
       font-weight: 700;
       cursor: pointer;
       outline: none;
     }
-
     details p {
       margin-top: 10px;
       font-size: 1em;
       line-height: 1.6em;
     }
-
     .whatsapp-button {
       display: inline-block;
       background-color: #25D366;
@@ -130,28 +111,23 @@
       font-weight: 600;
       margin-top: 10px;
     }
-
     footer {
       text-align: center;
       padding: 30px 10px;
       font-size: 14px;
       color: #002B45;
     }
-
     @media (max-width: 768px) {
       nav {
         display: none;
       }
-
       .burger {
         display: flex;
       }
-
       .logo-container {
         flex-direction: column;
         align-items: flex-start;
       }
-
       .slogan {
         margin-top: 8px;
         font-size: 18px;
@@ -161,67 +137,65 @@
 </head>
 <body>
 
-  <header>
-    <div class="logo-container">
-      <img src="https://i.postimg.cc/YC2dmQw8/1-D15-F631-6465-49-D2-94-AA-1-C08-A58-F3976.png" alt="JobOnTheBeach Logo">
-      <div class="slogan">Karriere im Paradies – stressfrei & sicher.</div>
-    </div>
-    <div class="burger" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <nav id="main-nav">
-      <a href="index.html">Startseite</a>
-      <a href="standorte.html">Standorte</a>
-      <a href="ueberuns.html">Über uns</a>
-    </nav>
-    <div class="mobile-nav" id="mobileNav">
-      <a href="index.html">Startseite</a>
-      <a href="standorte.html">Standorte</a>
-      <a href="ueberuns.html">Über uns</a>
-    </div>
-  </header>
-
-  <div class="container">
-    <h1>Unsere Standorte</h1>
-    <p>Wähle deinen Lieblingsort – wir machen den Rest. Jeder Standort liegt direkt am Meer, bietet moderne Büros, Freizeitmöglichkeiten und auf Wunsch eine voll ausgestattete Wohnung.</p>
-
-    <details>
-      <summary>🇲🇽 Playa del Carmen, Mexiko</summary>
-      <p>Karibik pur: Playa bietet dir glasklares Wasser, internationale Community und kurze Wege. Dein Büro liegt 5 Minuten vom Strand entfernt.</p>
-      <p><strong>Jobinhalte:</strong> Kundenservice, E-Mail Support, E-Commerce Betreuung, digitale Recherchen.</p>
-      <p><strong>Wohnen:</strong> 60 m², möbliert, mit Balkon, Küche, Internet – direkt über uns mietbar oder selbst organisieren.</p>
-      <a class="whatsapp-button" href="https://wa.me/5210000000000?text=Ich%20interessiere%20mich%20für%20Playa%20del%20Carmen">Jetzt bewerben</a>
-    </details>
-
-    <details>
-      <summary>🇨🇷 Tamarindo, Costa Rica</summary>
-      <p>Tamarindo – Surferparadies mit Dschungel-Flair. Büro fußläufig zum Pazifik, relaxter Lifestyle und moderne Infrastruktur.</p>
-      <p><strong>Jobinhalte:</strong> Content Moderation, AI-Unterstützung, Projektkommunikation, technischer Support.</p>
-      <p><strong>Wohnen:</strong> Strandnah, möbliert, mit Internet – auf Wunsch direkt von uns organisiert.</p>
-      <a class="whatsapp-button" href="https://wa.me/5210000000000?text=Ich%20interessiere%20mich%20für%20Tamarindo">Jetzt bewerben</a>
-    </details>
-
-    <details>
-      <summary>🇵🇦 Coronado, Panama</summary>
-      <p>Modernes Strandleben nahe Panama-Stadt. Coronado bietet dir Sicherheit, Komfort und internationales Flair mit Pazifikblick.</p>
-      <p><strong>Jobinhalte:</strong> Backoffice, CRM-Pflege, Projektassistenz, AI-Content-Projekte.</p>
-      <p><strong>Wohnen:</strong> Stylishe Apartments in Strandnähe – voll ausgestattet. Oder du wählst frei.</p>
-      <a class="whatsapp-button" href="https://wa.me/5210000000000?text=Ich%20interessiere%20mich%20für%20Coronado">Jetzt bewerben</a>
-    </details>
+<header>
+  <div class="logo-container">
+    <img src="https://i.postimg.cc/YC2dmQw8/1-D15-F631-6465-49-D2-94-AA-1-C08-A58-F3976.png" alt="JobOnTheBeach Logo">
+    <div class="slogan">Karriere im Paradies – stressfrei & sicher.</div>
   </div>
+  <div class="burger" onclick="toggleMenu()">
+    <div></div><div></div><div></div>
+  </div>
+  <nav id="main-nav">
+    <a href="index.html">Startseite</a>
+    <a href="standorte.html">Standorte</a>
+    <a href="ueberuns.html">Über uns</a>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Startseite</a>
+    <a href="standorte.html">Standorte</a>
+    <a href="ueberuns.html">Über uns</a>
+  </div>
+</header>
 
-  <footer>
-    © 2025 JobOnTheBeach – Arbeiten, wo andere Urlaub machen.
-  </footer>
+<div class="container">
+  <h1>Unsere Standorte</h1>
+  <p>Wähle deinen Lieblingsort – wir machen den Rest. Jeder Standort liegt direkt am Meer, bietet moderne Büros, Freizeitmöglichkeiten und auf Wunsch eine voll ausgestattete Wohnung.</p>
 
-  <script>
-    function toggleMenu() {
-      var nav = document.getElementById("mobileNav");
-      nav.style.display = nav.style.display === "flex" ? "none" : "flex";
-    }
-  </script>
+  <details>
+    <summary>🇲🇽 Playa del Carmen, Mexiko</summary>
+    <p>Playa del Carmen liegt an der berühmten Riviera Maya – einer der schönsten Küstenstreifen Mexikos. Türkisblaues Meer, endlose Sandstrände, internationale Restaurants und ein pulsierendes Stadtleben machen diesen Ort zu einem perfekten Zuhause auf Zeit. Die Infrastruktur ist hervorragend: moderne Krankenhäuser, Supermärkte, Fitnessstudios, Cafés mit WLAN, Coworking-Spaces und ein starkes internationales Netzwerk an Auswanderern.</p>
+    <p>Unser Büro befindet sich zentral – nur fünf Minuten vom Strand entfernt – in einem modernen Gebäude mit Klimaanlage, ergonomischen Arbeitsplätzen und Pausenräumen mit Kaffee, Snacks und Lounge-Bereich. Hier herrscht eine professionelle, aber lockere Atmosphäre. Die Tätigkeiten sind vielfältig: Du wirst in Kundenprojekten arbeiten, vor allem im digitalen Support (E-Mail und Chat), in der Verwaltung von E-Commerce-Systemen, der Pflege von KI-gestützten Inhalten oder der Optimierung von Datenflüssen.</p>
+    <p>Wenn du möchtest, kannst du über uns eine voll möblierte Wohnung mieten (ca. 60 m²). Sie befindet sich ebenfalls strandnah, hat ein Schlafzimmer, Wohnzimmer mit Küche, Bad, Balkon und Highspeed-Internet. Alternativ kannst du dir natürlich auch selbst etwas suchen – wir helfen dir gerne bei der Wohnungssuche.</p>
+    <a class="whatsapp-button" href="https://wa.me/5210000000000?text=Ich%20interessiere%20mich%20für%20Playa%20del%20Carmen">Jetzt bewerben</a>
+  </details>
+
+  <details>
+    <summary>🇨🇷 Tamarindo, Costa Rica</summary>
+    <p>Tamarindo liegt an der Pazifikküste Costa Ricas und gilt als einer der schönsten und entspanntesten Orte Lateinamerikas. Hier erwarten dich Natur, Sonne, Palmen, freundliche Menschen – und ein Lebensrhythmus, der dich den Stress in Europa vergessen lässt. Der kleine Ort hat sich in den letzten Jahren zu einem Hotspot für Digitale Nomaden, Surfer und Auswanderer entwickelt.</p>
+    <p>Unser Büro liegt nur wenige Gehminuten vom Strand entfernt. Es ist lichtdurchflutet, mit moderner Ausstattung und einem Outdoor-Pausenbereich. Die Aufgaben sind abwechslungsreich: Du wirst z. B. Inhalte prüfen und moderieren, automatisierte KI-Systeme überwachen, Kunden-E-Mails beantworten, Berichte erstellen oder in Slack und Trello kleinere Projektaufgaben managen.</p>
+    <p>Für deine Unterkunft kannst du dir selbst etwas suchen – es gibt viele schöne Apartments und Häuser in der Nähe – oder du mietest über uns eine strandnahe Firmenwohnung. Diese sind voll möbliert, mit Balkon, Küche, WLAN und stilvoll eingerichtet.</p>
+    <a class="whatsapp-button" href="https://wa.me/5210000000000?text=Ich%20interessiere%20mich%20für%20Tamarindo">Jetzt bewerben</a>
+  </details>
+
+  <details>
+    <summary>🇵🇦 Coronado, Panama</summary>
+    <p>Coronado ist eine gehobene Strandgemeinde etwa eine Stunde westlich von Panama-Stadt. Es ist einer der beliebtesten Wohnorte für Expats in Panama – bekannt für seine sichere Umgebung, moderne Infrastruktur und ruhige Lage direkt am Pazifik. In Coronado findest du eine perfekte Balance aus Arbeit und Erholung.</p>
+    <p>Unser Büro befindet sich in einem kleinen Business-Komplex mit schnellem Glasfaser-Internet, ergonomischer Ausstattung und einem Gemeinschaftsbereich mit Küche und Sofaecke. Die Aufgaben in Coronado sind meist etwas ruhiger und strukturierter: Du arbeitest im Backoffice, übernimmst administrative Aufgaben, betreust internationale Projekte oder pflegst Kundendaten in CRM-Systemen.</p>
+    <p>Für deine Unterkunft bieten wir voll ausgestattete Apartments in Strandnähe an (ca. 60 m², möbliert, Balkon, Küche, Internet). Diese können flexibel gemietet werden. Alternativ kannst du dir natürlich auch eigenständig etwas suchen – auf Wunsch stellen wir Kontakte und Unterstützung bereit.</p>
+    <a class="whatsapp-button" href="https://wa.me/5210000000000?text=Ich%20interessiere%20mich%20für%20Coronado">Jetzt bewerben</a>
+  </details>
+</div>
+
+<footer>
+  © 2025 JobOnTheBeach – Arbeiten, wo andere Urlaub machen.
+</footer>
+
+<script>
+  function toggleMenu() {
+    var nav = document.getElementById("mobileNav");
+    nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+  }
+</script>
 
 </body>
 </html>
